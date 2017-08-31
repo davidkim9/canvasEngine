@@ -7,6 +7,7 @@ var Rectangle = require('../geom/Rectangle');
  * ChromaticAberation Class
  */
 class ChromaticAberation extends Sprite {
+
   constructor() {
     super();
     this.deviation = 0;
@@ -65,6 +66,7 @@ class ChromaticAberation extends Sprite {
 
     context.putImageData(this.cached, offsetX, offsetY);
   };
+  
 }
 
 module.exports = ChromaticAberation;

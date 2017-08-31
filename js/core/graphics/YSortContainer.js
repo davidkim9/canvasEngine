@@ -3,19 +3,20 @@ var Sprite = require('./Sprite');
 
 /**
  * YSortContainer Class
+ * The children of this container will be sorted based off their y position
  */
-function YSortContainer(image) {
-  YSortContainer.super_.apply(this, arguments);
+class YSortContainer extends Sprite {
+
+  constructor(image) {
+    super();
+  }
+
+  render(context) {
+    this.children.sort(function (a, b) {
+      return a.point.y - b.point.y;
+    });
+  };
+
 }
-
-//YSortContainer extends Sprite
-util.inherits(YSortContainer, Sprite);
-var method = YSortContainer.prototype;
-
-method.render = function (context) {
-  this.children.sort(function (a, b) {
-    return a.point.y - b.point.y;
-  });
-};
 
 module.exports = YSortContainer;

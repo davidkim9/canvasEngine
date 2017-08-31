@@ -5,7 +5,8 @@ var geom = require('../geom');
 /**
  * TextSprite Class
  */
-class TextSprite extends Sprite{
+class TextSprite extends Sprite {
+
   constructor(text, font, strokeStyle, fillStyle, lineWidth) {
     super();
     this.strokeStyle = strokeStyle ? strokeStyle: "#000";
@@ -36,6 +37,7 @@ class TextSprite extends Sprite{
     var v = rect.v.cloneVector();
     return new geom.Rectangle(p, v);
   };
+  
 }
 
 module.exports = TextSprite;

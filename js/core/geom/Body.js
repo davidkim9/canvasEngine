@@ -1,25 +1,24 @@
 /**
  * Body Interface
  */
-var method = Body.prototype;
+class Body {
+  /**
+   * getPoint()
+   * This method should return this body's location by point
+   */
+  getPoint() {}
 
-function Body() {}
+  /**
+   * getBounds()
+   * This method should return this body's outer square boundary
+   */
+  getBounds() {}
 
-/**
- * getPoint()
- * This method should return this body's location by point
- */
-method.getPoint = function () {};
+  /**
+   * getBoundPoints()
+   */
+  getBoundPoints() {}
+}
 
-/**
- * getBounds()
- * This method should return this body's outer square boundary
- */
-method.getBounds = function () {};
-
-/**
- * getBoundPoints()
- */
-method.getBoundPoints = function () {};
 
 module.exports = Body;
