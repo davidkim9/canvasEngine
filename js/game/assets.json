@@ -5,26 +5,9 @@ module.exports = {
   "crate": "crate.png",
 
   "sky": "sky.png",
-  "background": "background.png",
-  "middleground": "middleground.png",
-  "glow": "glow.png",
-  "street": "street.png",
-
-  "note": "note.png",
   "coin": "coin.png",
-  "pointer": "pointer.png",
-
-  "baddie1": "baddie1.png",
-  "baddie2": "baddie2.png",
-  "boss": "boss.png",
-  "microphone": "microphone.png",
-  "djsantamonica": "DJSM.png",
-  "jeanken": "JeanKen.png",
-  "kamikaziboy": "KamikaziBoy.png",
-  "spearribs": "SpearRibs.png",
+  
   "tokyo": "Tokyo.png",
-  "trapped": "trapped.png",
-
-  "food": "stek.png",
-  "hit": "hit.png",
+  
+  "food": "stek.png"
 }

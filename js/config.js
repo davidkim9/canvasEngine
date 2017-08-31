@@ -1,6 +1,6 @@
 global.showFPS = false;
-global.width = 800;//window.innerWidth;
-global.height = 400;//window.innerHeight;
+global.width = window.innerWidth;
+global.height = window.innerHeight;
 global.renderPadding = 0;
 global.yScale = 0.66;
 global.resizable = true;

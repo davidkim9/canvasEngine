@@ -1,5 +1,6 @@
 
 var Demo = require('./demo/Demo');
+var AudioDemo = require('./audioDemo/AudioDemo');
 var ActOne = require('./actOne/ActOne');
 
 /**
@@ -14,7 +15,9 @@ class Game {
     this.active = false;
 
     this.scenes = {
-      "start": new ActOne(this, loader)
+      "demo": new Demo(),
+      "audioDemo": new AudioDemo(this, loader),
+      "start": new ActOne(this, loader),
     };
 
     this.currentScene = null;
@@ -37,7 +40,7 @@ class Game {
 
   startGame() {
     //Initialize Game
-    this.showScene("start");
+    this.showScene("audioDemo");
     this.active = true;
   };
 
